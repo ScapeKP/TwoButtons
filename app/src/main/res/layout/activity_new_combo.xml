@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="Название"
+            android:layout_gravity="top"
+            android:ems="10"
+            android:id="@+id/new_name" />
+
+        <Button
+            android:id="@+id/button3"
+            android:text="Готово"
+            android:layout_gravity="top|end"
+            android:onClick="create_combo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_erase_selected"
+            android:textColor="@color/colorBlack"
+            android:layout_marginRight="@dimen/my_small_margin"
+            android:layout_marginEnd="@dimen/my_small_margin"/>
+
+        <Button
+            android:id="@+id/button1"
+            android:onClick="btn1"
+            android:layout_gravity="center"
+            android:layout_width="@dimen/button_size"
+            android:layout_height="@dimen/button_size"
+            android:background="@drawable/indicator_code_lock_point_area_green"/>
+        <TextView
+            android:id="@+id/text1"
+            android:text=""
+            android:layout_gravity="bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <Button
+            android:id="@+id/button2"
+            android:onClick="btn2"
+            android:layout_gravity="center"
+            android:layout_width="@dimen/button_size"
+            android:layout_height="@dimen/button_size"
+            android:background="@drawable/indicator_code_lock_point_area_red"/>
+
+        <TextView
+            android:id="@+id/text2"
+            android:text=""
+            android:layout_gravity="bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </FrameLayout>
+
+
+
+
+
+
+</LinearLayout>

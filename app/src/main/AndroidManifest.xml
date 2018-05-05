@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ru.smi.twobuttons">
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".AllCombo"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".NewCombo"
+            android:label="@string/title_activity_new_combo"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Combo"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".deleteCombo"
+            android:theme="@style/Theme.AppCompat.Dialog" />
+        <activity
+            android:name=".Library"
+            android:label="@string/title_activity_library"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SoundLibrary"
+            android:label="@string/title_activity_sound_library"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ChooseSource"
+            android:theme="@style/Theme.AppCompat.Dialog" />
+        <activity android:name=".AddToAllCombo"
+            android:theme="@style/Theme.AppCompat.Dialog" />
+    </application>
+
+</manifest>
